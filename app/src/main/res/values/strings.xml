@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MAD</string>
+    <string name="top">top</string>
+    <string name="logo">logo</string>
+    <string name="cart">cart</string>
+    <string name="user">user</string>
+    <string name="main">main</string>
+    <string name="riderList">
+        <item>Select</item>
+        <item>R001</item>
+        <item>R002</item>
+        <item>R003</item>
+        <item>R004</item>
+        <item>R005</item>
+        <item>R006</item>
+    </string>
+</resources>
