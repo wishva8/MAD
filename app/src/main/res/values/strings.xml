@@ -5,13 +5,27 @@
     <string name="cart">cart</string>
     <string name="user">user</string>
     <string name="main">main</string>
-    <string name="riderList">
+    <string name="order">order</string>
+    <string name="orderCount">order count</string>
+    <string name="pendingOrders">pending orders</string>
+    <string name="rider">rider</string>
+    <string name="riderCount">rider count</string>
+    <string name="freeRiders">free riders</string>
+    <string name="assignRider">assign rider</string>
+    <string name="addRider">add rider</string>
+    <string name="viewRider">view rider</string>
+    <string name="_25">25</string>
+    <string name="pending_orders">Pending Orders</string>
+    <string name="_8">8</string>
+    <string name="free_riders">Free Riders</string>
+    <string name="assign_rider">Assign Rider</string>
+    <string name="add_rider">Add Rider</string>
+    <string name="view_rider">View Rider</string>
+    <string-array name="riderNumber">
         <item>Select</item>
         <item>R001</item>
         <item>R002</item>
         <item>R003</item>
         <item>R004</item>
-        <item>R005</item>
-        <item>R006</item>
-    </string>
+    </string-array>
 </resources>
