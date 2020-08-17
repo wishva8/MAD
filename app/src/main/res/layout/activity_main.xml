@@ -200,7 +200,7 @@
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Button
-
+        android:onClick="viewRiders"
         android:id="@+id/button4"
         android:layout_width="132dp"
         android:layout_height="55dp"
@@ -210,7 +210,7 @@
         android:backgroundTint="#FFFFFF"
         android:contentDescription="@string/viewRider"
         android:shadowColor="#121212"
-        android:text="@string/view_rider"
+        android:text="@string/view_riders"
         android:textAllCaps="false"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"

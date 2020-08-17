@@ -19,13 +19,23 @@
     <string name="_8">8</string>
     <string name="free_riders">Free Riders</string>
     <string name="assign_rider">Assign Rider</string>
+    <string name="view_riders">View Rider</string>
+    <string name="tel_no">Tel No :</string>
+    <string name="address">Address :</string>
+    <string name="name">Name :</string>
+    <string name="driving_l_no">Driving L.No :</string>
+    <string name="experiences">Experiences :</string>
     <string name="add_rider">Add Rider</string>
-    <string name="view_rider">View Rider</string>
-    <string-array name="riderNumber">
-        <item>Select</item>
-        <item>R001</item>
-        <item>R002</item>
-        <item>R003</item>
-        <item>R004</item>
-    </string-array>
+    <string name="qualification">Qualification :</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="todo">TODO</string>
+
+    <string name="riderName">Amarabandu</string>
+    <string name="DLNo">B1234567</string>
+    <string name="riderAddress">519/c,Aggona, Mulleriyawa</string>
+    <string name="riderTel">0777123456</string>
+    <string name="riderExpe">driving experince - 3years</string>
+    <string name="riderQuli">English, Sinhala</string>
+
 </resources>

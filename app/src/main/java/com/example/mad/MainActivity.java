@@ -22,5 +22,8 @@ public void addRider(View view){
         Intent intent2= new Intent(this, MainActivity3.class);
         startActivity(intent2);
 }
-
+    public void viewRiders(View view){
+        Intent intent2= new Intent(this, MainActivity4.class);
+        startActivity(intent2);
+    }
 }
