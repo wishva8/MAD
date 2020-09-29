@@ -30,12 +30,16 @@
     <string name="update">Update</string>
     <string name="delete">Delete</string>
     <string name="todo">TODO</string>
-
     <string name="riderName">Amarabandu</string>
     <string name="DLNo">B1234567</string>
     <string name="riderAddress">519/c,Aggona, Mulleriyawa</string>
     <string name="riderTel">0777123456</string>
     <string name="riderExpe">driving experince - 3years</string>
     <string name="riderQuli">English, Sinhala</string>
+    <string name="login_topic">Welcome to Smart Fashion</string>
+    <string name="login">Login</string>
+    <string name="userName">Username</string>
+    <string name="passwordLogin">Password</string>
+    <string name="signinGuide">Do you want to Sign In?</string>
 
 </resources>

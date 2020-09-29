@@ -22,7 +22,7 @@
         android:text="Qualification :"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextMultiLine3"
+        app:layout_constraintEnd_toStartOf="@+id/etQualification"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
@@ -111,7 +111,7 @@
         app:srcCompat="@drawable/userdp_foreground" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/propic"
         android:layout_width="53dp"
         android:layout_height="80dp"
         android:layout_marginEnd="124dp"
@@ -131,7 +131,7 @@
         android:text="Name :"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/textView14"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toStartOf="@+id/etName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout"
         app:layout_constraintVertical_bias="0.666" />
@@ -147,7 +147,7 @@
         android:text="Address :"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/textView16"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName6"
+        app:layout_constraintEnd_toStartOf="@+id/etAddress"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
@@ -162,7 +162,7 @@
         android:text="Tel No :"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName7"
+        app:layout_constraintEnd_toStartOf="@+id/etTel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -198,7 +198,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/etName"
         android:layout_width="207dp"
         android:layout_height="33dp"
         android:layout_marginStart="25dp"
@@ -210,10 +210,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/propic" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/etDrivingLNo"
         android:layout_width="207dp"
         android:layout_height="33dp"
         android:layout_marginStart="45dp"
@@ -225,10 +225,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView14"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/etAddress"
         android:layout_width="207dp"
         android:layout_height="33dp"
         android:layout_marginStart="2dp"
@@ -237,14 +237,14 @@
         android:layout_marginBottom="12dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName7"
+        app:layout_constraintBottom_toTopOf="@+id/etTel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintTop_toBottomOf="@+id/etDrivingLNo"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/etTel"
         android:layout_width="207dp"
         android:layout_height="33dp"
         android:layout_marginEnd="36dp"
@@ -254,10 +254,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView16"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+        app:layout_constraintTop_toBottomOf="@+id/etAddress" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine2"
+        android:id="@+id/etExperoence"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
@@ -270,10 +270,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView17"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+        app:layout_constraintTop_toBottomOf="@+id/etTel" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine3"
+        android:id="@+id/etQualification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
@@ -287,10 +287,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView17"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+        app:layout_constraintTop_toBottomOf="@+id/etTel" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnsave"
         android:layout_width="69dp"
         android:layout_height="40dp"
         android:layout_marginStart="241dp"
@@ -303,6 +303,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine3" />
+        app:layout_constraintTop_toBottomOf="@+id/etQualification" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
