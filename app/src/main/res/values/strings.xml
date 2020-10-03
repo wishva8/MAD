@@ -41,5 +41,36 @@
     <string name="userName">Username</string>
     <string name="passwordLogin">Password</string>
     <string name="signinGuide">Do you want to Sign In?</string>
+    <string name="HintName">Enter Name</string>
+
+    <string name="HNIC">NIC</string>
+
+    <string name="Haddress">Enter Address</string>
+
+    <string name="Hage">Enter age</string>
+
+    <string name="PNO">+94*********</string>
+
+    <string name="Hnic">enter nic</string>
+
+    <string name="Dname">Enter name</string>
+
+    <string name="hintname">Name</string>
+
+    <string name="UN">Enter value</string>
+    <string name="NIC">NIC</string>
+    <string name="AD">Address</string>
+    <string name="age">Enter age</string>
+    <string name="CNo">+94********</string>
+    <string name="ADD">ADD</string>
+    <string name="reset">Reset</string>
+
+    <string name="uid">User\'s ID</string>
+    <string name="age_a">Age</string>
+
+    <string name="Contact_no">Contact_NO</string>
+    <string name="Update_page">Update Page</string>
+    <string name="ADD_User">ADD User Page</string>
+    <string name="Delete_page">Delete Page</string>
 
 </resources>

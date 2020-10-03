@@ -63,9 +63,9 @@
 
     <TextView
         android:id="@+id/txtview"
-        android:layout_width="371dp"
-        android:layout_height="346dp"
-        android:layout_marginTop="103dp"
+        android:layout_width="352dp"
+        android:layout_height="463dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
