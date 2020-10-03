@@ -22,7 +22,7 @@ public class Login extends AppCompatActivity {
 
     EditText username,password;
     Button loginBtn;
-    DatabaseReference dbref;
+    DatabaseReference dbrefCus;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,12 +41,24 @@ public class Login extends AppCompatActivity {
                 Toast.makeText(this, "Please enter the Password", Toast.LENGTH_SHORT).show();
             else {
 
-                dbref= FirebaseDatabase.getInstance().getReference().child("User").child("customer");
+                dbrefCus= FirebaseDatabase.getInstance().getReference().child("User").child("Customer");
+                DatabaseReference dbrefAdmin= FirebaseDatabase.getInstance().getReference().child("User").child("Admin");
+                DatabaseReference dbrefStockManager= FirebaseDatabase.getInstance().getReference().child("User").child("StockManager");
                 final DatabaseReference readDManager=FirebaseDatabase.getInstance().getReference().child("User").child("deliveryManager");
                 readDManager.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        String pwd=null,un=null;
+                        if(snapshot.hasChildren()){
 
+                            pwd=snapshot.child("password").getValue().toString();
+                            un=snapshot.child("username").getValue().toString();
+                            if(pwd.equals(password.getText().toString()) && un.equals(username.getText().toString())){
+                                Toast.makeText(Login.this, "Login Success", Toast.LENGTH_SHORT).show();
+                                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                                startActivity(intent);
+                            }
+                        }
 
                     }
 
@@ -57,17 +69,38 @@ public class Login extends AppCompatActivity {
                     }
                 });
 
-                dbref.addListenerForSingleValueEvent(new ValueEventListener() {
+                dbrefCus.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                       String pwd=null,un=null;
+                       if (snapshot.hasChildren()){
+                           pwd=snapshot.child("password").getValue().toString();
+                           un=snapshot.child("username").getValue().toString();
+                           if(pwd.equals(password.getText().toString()) && un.equals(username.getText().toString())){
+                               Toast.makeText(Login.this, "Login Success", Toast.LENGTH_SHORT).show();
+                               Intent intent=new Intent(getApplicationContext(),MainActivity2.class);//dill home page
+                               startActivity(intent);
+                           }
+                       }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+                dbrefAdmin.addListenerForSingleValueEvent(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
                         String pwd=null,un=null;
-                        if(snapshot.hasChildren()){
-                            Toast.makeText(Login.this, "in side login function", Toast.LENGTH_SHORT).show();
+                        if (snapshot.hasChildren()){
                             pwd=snapshot.child("password").getValue().toString();
                             un=snapshot.child("username").getValue().toString();
                             if(pwd.equals(password.getText().toString()) && un.equals(username.getText().toString())){
                                 Toast.makeText(Login.this, "Login Success", Toast.LENGTH_SHORT).show();
-                                Intent intent=new Intent(getApplicationContext(),MainActivity5.class);
+                                Intent intent=new Intent(getApplicationContext(),MainActivity3.class);//oshan home page
                                 startActivity(intent);
                             }
                         }
@@ -79,6 +112,30 @@ public class Login extends AppCompatActivity {
 
                     }
                 });
+
+                dbrefStockManager.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                        String pwd=null,un=null;
+                        if (snapshot.hasChildren()){
+                            pwd=snapshot.child("password").getValue().toString();
+                            un=snapshot.child("username").getValue().toString();
+                            if(pwd.equals(password.getText().toString()) && un.equals(username.getText().toString())){
+                                Toast.makeText(Login.this, "Login Success", Toast.LENGTH_SHORT).show();
+                                Intent intent=new Intent(getApplicationContext(),MainActivity4.class);//stenafia home page
+                                startActivity(intent);
+                            }
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
 
             }
         }catch (Exception e){
