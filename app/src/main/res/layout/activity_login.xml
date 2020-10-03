@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:foregroundTint="#FFFFFF"
-    tools:context=".Login">
+    tools:context=".Login"
+    android:background="@drawable/log_img">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#996AED"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+       >
 
         <TextView
             android:id="@+id/textView28"
@@ -56,7 +55,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName9"
+                android:id="@+id/etUserName"
                 android:layout_width="269dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="27dp"
@@ -70,7 +69,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName11"
+                android:id="@+id/etPassword"
                 android:layout_width="269dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="27dp"
@@ -80,19 +79,20 @@
                 android:hint="@string/passwordLogin"
                 android:inputType="textPersonName"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+                app:layout_constraintTop_toBottomOf="@+id/etUserName" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/btnLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="117dp"
                 android:layout_marginTop="24dp"
                 android:background="#A3C3C3C3"
+                android:onClick="CheckLogin"
                 android:text="@string/login"
                 android:textColor="#FFFFFF"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11" />
+                app:layout_constraintTop_toBottomOf="@+id/etPassword" />
 
             <TextView
                 android:id="@+id/textView30"
@@ -103,7 +103,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button7" />
+                app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -113,12 +113,7 @@
         android:layout_width="411dp"
         android:layout_height="85dp"
         android:layout_marginBottom="518dp"
-        android:background="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:background="#000000">
 
         <ImageView
             android:id="@+id/imageView3"
@@ -161,4 +156,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

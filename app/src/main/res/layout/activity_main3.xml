@@ -199,8 +199,8 @@
 
     <EditText
         android:id="@+id/etName"
-        android:layout_width="207dp"
-        android:layout_height="33dp"
+        android:layout_width="210dp"
+        android:layout_height="45dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="7dp"
         android:layout_marginEnd="43dp"
@@ -214,8 +214,8 @@
 
     <EditText
         android:id="@+id/etDrivingLNo"
-        android:layout_width="207dp"
-        android:layout_height="33dp"
+        android:layout_width="211dp"
+        android:layout_height="42dp"
         android:layout_marginStart="45dp"
         android:layout_marginTop="11dp"
         android:layout_marginEnd="37dp"
@@ -229,32 +229,26 @@
 
     <EditText
         android:id="@+id/etAddress"
-        android:layout_width="207dp"
-        android:layout_height="33dp"
+        android:layout_width="212dp"
+        android:layout_height="45dp"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="36dp"
-        android:layout_marginBottom="12dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/etTel"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/etDrivingLNo"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toEndOf="@+id/textView15" />
 
     <EditText
         android:id="@+id/etTel"
-        android:layout_width="207dp"
-        android:layout_height="33dp"
+        android:layout_width="209dp"
+        android:layout_height="51dp"
         android:layout_marginEnd="36dp"
-        android:layout_marginBottom="173dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView16"
-        app:layout_constraintTop_toBottomOf="@+id/etAddress" />
+        app:layout_constraintStart_toEndOf="@+id/textView16" />
 
     <EditText
         android:id="@+id/etExperience"

@@ -1,14 +1,91 @@
 package com.example.mad;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.se.omapi.Session;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class Login extends AppCompatActivity {
+
+    EditText username,password;
+    Button loginBtn;
+    DatabaseReference dbref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+    }
+
+    public void CheckLogin(View view){
+
+        username= findViewById(R.id.etUserName);
+        password=findViewById(R.id.etPassword);
+        try{
+            if(TextUtils.isEmpty(username.getText().toString()))
+                Toast.makeText(this, "Please enter the Username", Toast.LENGTH_SHORT).show();
+            else if (TextUtils.isEmpty(password.getText().toString()))
+                Toast.makeText(this, "Please enter the Password", Toast.LENGTH_SHORT).show();
+            else {
+
+                dbref= FirebaseDatabase.getInstance().getReference().child("User").child("customer");
+                final DatabaseReference readDManager=FirebaseDatabase.getInstance().getReference().child("User").child("deliveryManager");
+                readDManager.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+
+                    }
+
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+                dbref.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        String pwd=null,un=null;
+                        if(snapshot.hasChildren()){
+                            Toast.makeText(Login.this, "in side login function", Toast.LENGTH_SHORT).show();
+                            pwd=snapshot.child("password").getValue().toString();
+                            un=snapshot.child("username").getValue().toString();
+                            if(pwd.equals(password.getText().toString()) && un.equals(username.getText().toString())){
+                                Toast.makeText(Login.this, "Login Success", Toast.LENGTH_SHORT).show();
+                                Intent intent=new Intent(getApplicationContext(),MainActivity5.class);
+                                startActivity(intent);
+                            }
+                        }
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+
+            }
+        }catch (Exception e){
+            e.getMessage();
+        }
+
+
+
     }
 }

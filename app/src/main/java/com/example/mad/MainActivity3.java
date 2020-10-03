@@ -24,6 +24,8 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
+
+
         txtName=findViewById(R.id.etName);
         txtdrivinLNO=findViewById(R.id.etDrivingLNo);
         address =findViewById(R.id.etAddress);
@@ -37,38 +39,51 @@ public class MainActivity3 extends AppCompatActivity {
         btnsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dbRef = FirebaseDatabase.getInstance().getReference().child("Rider");
 
-                if (TextUtils.isEmpty(txtName.getText().toString()))
-                    Toast.makeText(MainActivity3.this, "Enter Name", Toast.LENGTH_SHORT).show();
-                else if (TextUtils.isEmpty(txtdrivinLNO.getText().toString()))
-                    Toast.makeText(MainActivity3.this, "Enter Driving License No", Toast.LENGTH_SHORT).show();
-                else if (TextUtils.isEmpty(address.getText().toString()))
-                    Toast.makeText(MainActivity3.this, "Enter Address", Toast.LENGTH_SHORT).show();
-                else if (TextUtils.isEmpty(tel.getText().toString()))
-                    Toast.makeText(MainActivity3.this, "Enter Telephone Number", Toast.LENGTH_SHORT).show();
-                else if (TextUtils.isEmpty(experience.getText().toString()))
-                    Toast.makeText(MainActivity3.this, "Enter Experience", Toast.LENGTH_SHORT).show();
-                else if (TextUtils.isEmpty(qualification.getText().toString()))
-                    Toast.makeText(MainActivity3.this, "Enter Qualification", Toast.LENGTH_SHORT).show();
-                else {
+                dbRef = FirebaseDatabase.getInstance().getReference();
 
-                    rider.setName(txtName.getText().toString().trim());
-                    rider.setDrivinLNO(txtdrivinLNO.getText().toString().trim());
-                    rider.setAddress(address.getText().toString().trim());
-                    rider.setTel(tel.getText().toString().trim());
-                    rider.setExperience(experience.getText().toString().trim());
-                    rider.setQualification(qualification.getText().toString().trim());
-                    dbRef.child(txtdrivinLNO.getText().toString()).setValue(rider);
-                    Toast.makeText(MainActivity3.this, "Successfully Inserted", Toast.LENGTH_SHORT).show();
-                    Clear();
+                try {
+
+
+                    if (TextUtils.isEmpty(txtName.getText().toString()))
+                        Toast.makeText(MainActivity3.this, "Enter Name", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(txtdrivinLNO.getText().toString()))
+                        Toast.makeText(MainActivity3.this, "Enter Driving License No", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(address.getText().toString()))
+                        Toast.makeText(MainActivity3.this, "Enter Address", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(tel.getText().toString()))
+                        Toast.makeText(MainActivity3.this, "Enter Telephone Number", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(experience.getText().toString()))
+                        Toast.makeText(MainActivity3.this, "Enter Experience", Toast.LENGTH_SHORT).show();
+                    else if (TextUtils.isEmpty(qualification.getText().toString()))
+                        Toast.makeText(MainActivity3.this, "Enter Qualification", Toast.LENGTH_SHORT).show();
+                    else {
+
+                        rider.setName(txtName.getText().toString().trim());
+                        rider.setDrivinLNO(txtdrivinLNO.getText().toString().trim());
+                        rider.setAddress(address.getText().toString().trim());
+                        rider.setTel(tel.getText().toString().trim());
+                        rider.setExperience(experience.getText().toString().trim());
+                        rider.setQualification(qualification.getText().toString().trim());
+
+
+
+                        dbRef.child("rider").child(txtdrivinLNO.getText().toString()).setValue(rider);
+
+                        Toast.makeText(MainActivity3.this, "Successfully Inserted", Toast.LENGTH_SHORT).show();
+                        ClearField();
+                    }
+                }
+                catch (Exception e){
+
+                    e.getMessage();
                 }
             }
         } );
 
 
     }
-    private void Clear(){
+    private void ClearField(){
         txtName.setText("");
         txtdrivinLNO.setText("");
         address.setText("");
