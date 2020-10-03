@@ -30,6 +30,14 @@
 
 
         <activity android:name=".osh_MainActivity"/>
+
+
+        <activity android:name=".stef_ProductMain"/>
+
+        <activity android:name=".stef_UpdateProduct"/>
+
+
+        <activity android:name=".stef_MainActivity"/>
     </application>
 
 </manifest>

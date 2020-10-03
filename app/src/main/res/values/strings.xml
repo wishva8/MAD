@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MAD</string>
+
     <string name="top">top</string>
     <string name="logo">logo</string>
     <string name="cart">cart</string>
@@ -72,5 +72,50 @@
     <string name="Update_page">Update Page</string>
     <string name="ADD_User">ADD User Page</string>
     <string name="Delete_page">Delete Page</string>
+
+
+    <string name="app_name">Smart Fashion</string>
+
+    <string name="pid"> Enter product ID</string>
+
+    <string name="pname">Enter product name</string>
+
+    <string name="sizes">Enter product sizes</string>
+
+    <string name="price">Enter product price</string>
+
+    <string name="post_product_to_page">Post</string>
+
+    <string name="add_product_title">Add Product</string>
+
+    <string name="add_product_image">Add Image</string>
+
+    <string name="product_id">001</string>
+
+    <string name="product_name">Casual Pink Dress</string>
+
+    <string name="product_price">RS 1000</string>
+
+    <string name="product_description">High neck fashion dress</string>
+
+    <string name="update_product_title">Update Product</string>
+
+    <string name="update_button">Update</string>
+
+    <string name="category">Category</string>
+
+    <string name="tshirt">Long Dress with flower print</string>
+
+    <string name="deleteproduct">Delete</string>
+
+    <string name="colors">Enter product colors</string>
+
+    <string name="save">Save</string>
+
+    <string name="size">Small</string>
+
+    <string name="color">Blue and Pink</string>
+
+    <string name="img1">img</string>
 
 </resources>

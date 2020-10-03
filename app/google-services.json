@@ -8,9 +8,67 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:509353451545:android:d40fff2a752bdd24c34a88",
+        "mobilesdk_app_id": "1:509353451545:android:e64972d6022d248bc34a88",
         "android_client_info": {
           "package_name": "com.example.mad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509353451545-0hal8b6ft2sisdc5sqv0f3e47617e0e9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0CBnG7ng4JsgXZgj_6g4lhLIFmZMLJU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509353451545-0hal8b6ft2sisdc5sqv0f3e47617e0e9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509353451545:android:60e6a863926dc621c34a88",
+        "android_client_info": {
+          "package_name": "com.example.madsmartfashion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509353451545-0hal8b6ft2sisdc5sqv0f3e47617e0e9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0CBnG7ng4JsgXZgj_6g4lhLIFmZMLJU4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509353451545-0hal8b6ft2sisdc5sqv0f3e47617e0e9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509353451545:android:b13a9cb4efdd7167c34a88",
+        "android_client_info": {
+          "package_name": "com.example.smartfashion"
         }
       },
       "oauth_client": [
