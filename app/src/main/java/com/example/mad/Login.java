@@ -100,7 +100,7 @@ public class Login extends AppCompatActivity {
                             un=snapshot.child("username").getValue().toString();
                             if(pwd.equals(password.getText().toString()) && un.equals(username.getText().toString())){
                                 Toast.makeText(Login.this, "Login Success", Toast.LENGTH_SHORT).show();
-                                Intent intent=new Intent(getApplicationContext(),MainActivity3.class);//oshan home page
+                                Intent intent=new Intent(getApplicationContext(),osh_MainActivity.class);
                                 startActivity(intent);
                             }
                         }
@@ -123,7 +123,7 @@ public class Login extends AppCompatActivity {
                             un=snapshot.child("username").getValue().toString();
                             if(pwd.equals(password.getText().toString()) && un.equals(username.getText().toString())){
                                 Toast.makeText(Login.this, "Login Success", Toast.LENGTH_SHORT).show();
-                                Intent intent=new Intent(getApplicationContext(),MainActivity4.class);//stenafia home page
+                                Intent intent=new Intent(getApplicationContext(),stef_ProductMain.class);
                                 startActivity(intent);
                             }
                         }

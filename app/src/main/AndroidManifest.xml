@@ -22,6 +22,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".osh_Updatepart1"/>
+
+        <activity android:name=".osh_delete"/>
+
+        <activity android:name=".osh_display"/>
+
+
+        <activity android:name=".osh_MainActivity"/>
+
+
+        <activity android:name=".stef_ProductMain"/>
+
+        <activity android:name=".stef_UpdateProduct"/>
+
+
+        <activity android:name=".stef_MainActivity"/>
     </application>
 
 </manifest>
