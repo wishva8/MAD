@@ -56,6 +56,8 @@ public class Login extends AppCompatActivity {
                             if(pwd.equals(password.getText().toString()) && un.equals(username.getText().toString())){
                                 Toast.makeText(Login.this, "Login Success", Toast.LENGTH_SHORT).show();
                                 Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                                password.setText("");
+                                username.setText("");
                                 startActivity(intent);
                             }
                         }
@@ -79,6 +81,8 @@ public class Login extends AppCompatActivity {
                            if(pwd.equals(password.getText().toString()) && un.equals(username.getText().toString())){
                                Toast.makeText(Login.this, "Login Success", Toast.LENGTH_SHORT).show();
                                Intent intent=new Intent(getApplicationContext(),MainActivity2.class);//dill home page
+                               password.setText("");
+                               username.setText("");
                                startActivity(intent);
                            }
                        }
@@ -101,6 +105,8 @@ public class Login extends AppCompatActivity {
                             if(pwd.equals(password.getText().toString()) && un.equals(username.getText().toString())){
                                 Toast.makeText(Login.this, "Login Success", Toast.LENGTH_SHORT).show();
                                 Intent intent=new Intent(getApplicationContext(),osh_MainActivity.class);
+                                password.setText("");
+                                username.setText("");
                                 startActivity(intent);
                             }
                         }
@@ -124,6 +130,8 @@ public class Login extends AppCompatActivity {
                             if(pwd.equals(password.getText().toString()) && un.equals(username.getText().toString())){
                                 Toast.makeText(Login.this, "Login Success", Toast.LENGTH_SHORT).show();
                                 Intent intent=new Intent(getApplicationContext(),stef_ProductMain.class);
+                                password.setText("");
+                                username.setText("");
                                 startActivity(intent);
                             }
                         }
@@ -145,4 +153,6 @@ public class Login extends AppCompatActivity {
 
 
     }
+
+
 }
