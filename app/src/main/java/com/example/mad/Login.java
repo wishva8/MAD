@@ -133,6 +133,9 @@ public class Login extends AppCompatActivity {
                                 password.setText("");
                                 username.setText("");
                                 startActivity(intent);
+                            }else {
+                                Toast.makeText(Login.this, "Login Unsuccessful", Toast.LENGTH_SHORT).show();
+
                             }
                         }
 

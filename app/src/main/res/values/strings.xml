@@ -333,5 +333,6 @@
     <string name="BgImage"/>
 
     <string name="signOutButton"/>
+    <string name="deleteAll">delete all</string>
 
 </resources>

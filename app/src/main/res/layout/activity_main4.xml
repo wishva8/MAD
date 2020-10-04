@@ -63,11 +63,13 @@
 
     <TextView
         android:id="@+id/txtview"
-        android:layout_width="227dp"
-        android:layout_height="382dp"
+        android:layout_width="242dp"
+        android:layout_height="352dp"
         android:layout_marginTop="72dp"
+        android:layout_marginBottom="64dp"
         android:scrollbars="vertical"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
@@ -86,6 +88,20 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <Button
+        android:id="@+id/deleteAllBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:background="#CCF43B3B"
+        android:onClick="DeleteAll"
+        android:text="@string/deleteAll"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <?php for ?>
 
