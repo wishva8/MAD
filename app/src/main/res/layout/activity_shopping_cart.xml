@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBEA"
+    android:onClick="editItems"
+    tools:context=".ShoppingCart">
+
+    <TableRow
+        android:id="@+id/MenuBar"
+        android:layout_width="411dp"
+        android:layout_height="61dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/MenuList"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/menuList"
+            app:srcCompat="@drawable/menu_icon"
+            app:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/shopLogo"
+            android:layout_width="264dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/logiIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/shoppingCrt"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:contentDescription="@string/ShoppingCart"
+            android:focusable="true"
+            app:srcCompat="@drawable/shopping_cart"
+            app:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/signOut"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/signOutButton"
+            app:tint="@android:color/white"
+            app:srcCompat="@drawable/sign_out" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/totitms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/totalItems"
+        android:textColor="#031A9C"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MenuBar" />
+
+    <ImageView
+        android:id="@+id/editIcon"
+        android:layout_width="47dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="45dp"
+        android:clickable="true"
+        android:contentDescription="@string/editimg"
+        android:focusable="true"
+        android:onClick="editItems"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totitms"
+        app:srcCompat="@drawable/edit"
+        app:tint="#090909" />
+
+    <ImageView
+        android:id="@+id/deleteIcon"
+        android:layout_width="47dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="13dp"
+        android:contentDescription="@string/delteImg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editIcon"
+        app:srcCompat="@drawable/delete"
+        app:tint="#090909" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/blousName"
+        android:textColor="#454242"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/editIcon"
+        app:layout_constraintTop_toBottomOf="@+id/totitms" />
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/price2"
+        android:textColor="#454242"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/editIcon"
+        app:layout_constraintTop_toBottomOf="@+id/ItemCode" />
+
+    <TextView
+        android:id="@+id/priceRs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/rs"
+        android:textColor="#454242"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/itemPrice"
+        app:layout_constraintTop_toBottomOf="@+id/ItemCode" />
+
+    <TextView
+        android:id="@+id/itemColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/clor"
+        android:textColor="#454242"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/deleteIcon"
+        app:layout_constraintTop_toBottomOf="@+id/itemPrice" />
+
+    <TextView
+        android:id="@+id/colortype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/colortype"
+        android:textColor="#454242"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/itemColor"
+        app:layout_constraintTop_toBottomOf="@+id/priceRs" />
+
+    <TextView
+        android:id="@+id/clothSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/size1"
+        android:textColor="#454242"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/deleteIcon"
+        app:layout_constraintTop_toBottomOf="@+id/itemColor" />
+
+    <TextView
+        android:id="@+id/sizeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/sizetyp"
+        android:textColor="#454242"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/clothSize"
+        app:layout_constraintTop_toBottomOf="@+id/colortype" />
+
+    <Button
+        android:id="@+id/placeOrderBtn"
+        android:layout_width="124dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="223dp"
+        android:background="#031DAC"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/placeOrder"
+        android:textColor="#FAFAFA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteIcon" />
+
+    <ImageView
+        android:id="@+id/bagItem1"
+        android:layout_width="137dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="331dp"
+        android:contentDescription="@string/bagItemOne"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MenuBar"
+        app:srcCompat="@drawable/girl2" />
+
+    <TextView
+        android:id="@+id/Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/quanti"
+        android:text="@string/quanti"
+        android:textColor="#454242"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/deleteIcon"
+        app:layout_constraintTop_toBottomOf="@+id/clothSize" />
+
+    <TextView
+        android:id="@+id/QtyNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/qtyNumber"
+        android:textColor="#454242"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/Quantity"
+        app:layout_constraintTop_toBottomOf="@+id/sizeType" />
+
+    <TextView
+        android:id="@+id/ItemCode"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/ItemCode"
+        android:textColor="#454242"
+        app:layout_constraintStart_toEndOf="@+id/editIcon"
+        app:layout_constraintTop_toBottomOf="@+id/itemName" />
+
+    <TextView
+        android:id="@+id/CodeNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/CodeNum"
+        app:layout_constraintStart_toEndOf="@+id/ItemCode"
+        app:layout_constraintTop_toBottomOf="@+id/itemName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

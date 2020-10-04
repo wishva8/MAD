@@ -80,7 +80,7 @@ public class Login extends AppCompatActivity {
                            un=snapshot.child("username").getValue().toString();
                            if(pwd.equals(password.getText().toString()) && un.equals(username.getText().toString())){
                                Toast.makeText(Login.this, "Login Success", Toast.LENGTH_SHORT).show();
-                               Intent intent=new Intent(getApplicationContext(),MainActivity2.class);//dill home page
+                               Intent intent=new Intent(getApplicationContext(),customerHome.class);
                                password.setText("");
                                username.setText("");
                                startActivity(intent);
@@ -153,6 +153,9 @@ public class Login extends AppCompatActivity {
 
 
     }
-
+    public void signUp(View view){
+        Intent intent1= new Intent(this, SignUp.class);
+        startActivity(intent1);
+    }
 
 }

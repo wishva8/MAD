@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -26,6 +27,8 @@ public class MainActivity4 extends AppCompatActivity {
         setContentView(R.layout.activity_main4);
 
         details=findViewById(R.id.txtview);
+
+        details.setMovementMethod(new ScrollingMovementMethod());
 //        RView=findViewById(R.id.details);
         dbRef= FirebaseDatabase.getInstance().getReference().child("rider");
         dbRef.addValueEventListener(new ValueEventListener() {

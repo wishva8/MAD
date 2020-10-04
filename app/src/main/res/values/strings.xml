@@ -118,4 +118,220 @@
 
     <string name="img1">img</string>
 
+
+
+
+
+    <string name="menuList"/>
+
+    <string name="logiIcon"/>
+
+    <string name="searchIcon"/>
+
+    <string name="coverImage"/>
+
+    <string name="newArrivals">NEW ARRIVALS</string>
+
+    <string name="clothsCategory"/>
+
+    <string name="womenCloths">Women</string>
+
+    <string name="womenCloth1"/>
+
+    <string name="womenCloth2"/>
+
+    <string name="womencloth3"/>
+
+    <string name="womenCloth4"/>
+
+    <string name="menCloths">Men</string>
+
+    <string name="Mencloth1"/>
+
+    <string name="menCloth1"/>
+
+    <string name="menCloth2"/>
+
+    <string name="menCloth3"/>
+
+    <string name="menCloth4"/>
+
+    <string name="NumOfItems">Bag(3Items)</string>
+
+    <string name="bagItems"/>
+
+    <string name="ShoppingCart"/>
+
+    <string name="bagItemOne"/>
+
+    <string name="updateBtn">UPDATE</string>
+
+    <string name="sumryTopic">ORDER SUMMARY</string>
+
+    <string name="SubTot">"Sub Total : "</string>
+
+    <string name="placeOrder">Place Order</string>
+
+    <string name="price2">"Price : "</string>
+
+
+
+    <string name="totalItems">Bag(1Item)</string>
+
+    <string name="editimg"/>
+
+    <string name="delteImg"/>
+
+    <string name="blousName">Sleevless Top</string>
+
+    <string name="blouseName"/>
+
+    <string name="price1">Price</string>
+
+    <string name="rs">Rs.1750.00</string>
+
+
+
+    <string name="clr">Color</string>
+
+    <string name="clor">"Color : "</string>
+
+    <string name="colortype">Yellow</string>
+
+    <string name="size1">"Size : "</string>
+
+    <string name="sizetyp">L</string>
+
+    <string name="btn">SAVE</string>
+
+    <string name="edit">editItems</string>
+
+    <string name="butn">UPDATE</string>
+
+    <string name="itmsize">Size</string>
+
+    <string name="iName">Item Name :</string>
+
+    <string name="detail1">Sub Total : LKR.1750.00</string>
+
+    <string name="Shippingfee">Shipping : LKR.0.00</string>
+
+    <string name="tot">Total : LKR.0.00</string>
+
+    <string name="visaMaster">Pay with Visa/Master</string>
+
+    <string name="btngroup"/>
+
+    <string name="amex">American Express</string>
+
+    <string name="visaMastCard"/>
+
+    <string name="amexCard"/>
+
+    <string name="pay">Pay Now</string>
+
+    <string name="payNow"/>
+
+    <string name="btnsave">SAVE</string>
+
+    <string name="add1">ADD</string>
+
+    <string name="add2">ADD</string>
+
+    <string name="add3">ADD</string>
+
+    <string name="add4">ADD</string>
+
+    <string name="add5">ADD</string>
+
+    <string name="add6">ADD</string>
+
+    <string name="add7">ADD</string>
+
+    <string name="add8">ADD</string>
+
+    <string name="newWomenCloth1"/>
+
+    <string name="newArrivalWomen">Women</string>
+
+    <string name="newWCloth1"/>
+
+    <string name="newWCloth2"/>
+
+    <string name="newWCloth3"/>
+
+    <string name="newWCloth5"/>
+
+    <string name="newWCloth4">newWCloth4</string>
+
+    <string name="newArrivalMen">Men</string>
+
+    <string name="newMCloth1"/>
+
+    <string name="newMCloth2"/>
+
+    <string name="newMCloth3"/>
+
+    <string name="newMCloth4"/>
+
+    <string name="newMclothPrice1">"Price : "</string>
+
+    <string name="WClothLKR">LKR 1750.00</string>
+
+    <string name="addWomenCloth1">ADD</string>
+
+    <string name="addWomenCloth2">addWomenCloth2</string>
+
+    <string name="addWomencloth2">ADD</string>
+
+    <string name="addWCloth3">ADD</string>
+
+    <string name="addWCloth4">ADD</string>
+
+    <string name="WClothLKR2"/>
+
+    <string name="newMClothPrice3"/>
+
+    <string name="newMClothPrice4"/>
+
+    <string name="newMclothPrice2">"Price : "</string>
+
+    <string name="newMClothPrice2">"Price : "</string>
+
+    <string name="updatePageLKR">LKR 1750.00</string>
+
+    <string name="QTY">Qty</string>
+
+    <string name="quantity">Qty</string>
+
+    <string name="quanti">"Qty : "</string>
+
+    <string name="qtyNumber">2</string>
+
+    <string name="itemName">Sleaveless top</string>
+
+    <string name="ClotheType">Linen Top</string>
+
+    <string name="ItemCode">"CodeNo : "</string>
+
+    <string name="CodeNum">A001</string>
+
+
+
+    <string name="ShopName">Smart Fashion</string>
+
+    <string name="shopName">Smart Fashion</string>
+
+    <string name="already_have_an_account_login">Already have an Account? Login</string>
+
+    <string name="LIVE_WITH_A_GRATEFUL_Heart">LIVE WITH A GRATEFUL Heart </string>
+
+    <string name="join_now">Join Now</string>
+
+    <string name="phone_number">Phone Number</string>
+
+    <string name="BgImage"/>
+
+    <string name="signOutButton"/>
+
 </resources>

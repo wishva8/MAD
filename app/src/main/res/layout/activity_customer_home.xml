@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBEA"
+    android:scrollbarAlwaysDrawHorizontalTrack="false"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    android:scrollbars="none"
+    tools:context=".customerHome">
+
+    <Button
+        android:id="@+id/add3"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="11dp"
+        android:background="#293B9F"
+        android:text="@string/add3"
+        android:textColor="#F8F5F5"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/add2"
+        app:layout_constraintTop_toBottomOf="@+id/womencloth3" />
+
+    <Button
+        android:id="@+id/add4"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="11dp"
+        android:background="#293B9F"
+        android:text="@string/add4"
+        android:textColor="#F8F5F5"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/add3"
+        app:layout_constraintTop_toBottomOf="@+id/womencloth4" />
+
+    <TableRow
+        android:id="@+id/MenuBar"
+        android:layout_width="411dp"
+        android:layout_height="61dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/MenuList"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/menuList"
+            app:srcCompat="@drawable/menu_icon"
+            app:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/shopLogo"
+            android:layout_width="264dp"
+            android:layout_height="50dp"
+            android:contentDescription="@string/logiIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/shoppingCrt"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:contentDescription="@string/ShoppingCart"
+            android:focusable="true"
+            android:onClick="shoppingCart"
+            app:srcCompat="@drawable/shopping_cart"
+            app:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/signOut"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/signOutButton"
+            app:tint="@android:color/white"
+            app:srcCompat="@drawable/sign_out" />
+
+    </TableRow>
+
+    <ImageView
+        android:id="@+id/coverImg"
+        android:layout_width="417dp"
+        android:layout_height="169dp"
+        android:contentDescription="@string/coverImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MenuBar"
+        app:srcCompat="@drawable/coverimage" />
+
+    <Button
+        android:id="@+id/NewArrivalButton"
+        android:layout_width="108dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="320dp"
+        android:background="#293B9F"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="newArrivalButton"
+        android:text="@string/newArrivals"
+        android:textColor="#FFFCFC"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coverImg" />
+
+    <TextView
+        android:id="@+id/womenId"
+        android:layout_width="65dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/womenCloths"
+        android:textColor="#070707"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coverImg" />
+
+    <ImageView
+        android:id="@id/womencloth1"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/womenCloth1"
+        app:layout_constraintEnd_toStartOf="@+id/womencloth2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/womenId"
+        app:srcCompat="@drawable/girl2" />
+
+    <ImageView
+        android:id="@id/womencloth2"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/womenCloth2"
+        app:layout_constraintEnd_toStartOf="@+id/womencloth3"
+        app:layout_constraintStart_toEndOf="@+id/womencloth1"
+        app:layout_constraintTop_toBottomOf="@+id/NewArrivalButton"
+        app:srcCompat="@drawable/girl1" />
+
+    <ImageView
+        android:id="@id/womencloth3"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/womencloth3"
+        app:layout_constraintEnd_toStartOf="@+id/womencloth4"
+        app:layout_constraintStart_toEndOf="@+id/womencloth2"
+        app:layout_constraintTop_toBottomOf="@+id/NewArrivalButton"
+        app:srcCompat="@drawable/girl4" />
+
+    <ImageView
+        android:id="@id/womencloth4"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/womenCloth4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/womencloth3"
+        app:layout_constraintTop_toBottomOf="@+id/coverImg"
+        app:srcCompat="@drawable/girl6" />
+
+    <TextView
+        android:id="@+id/menID"
+        android:layout_width="75dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/menCloths"
+        android:text="@string/menCloths"
+        android:textColor="#050505"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/womencloth1" />
+
+    <ImageView
+        android:id="@id/mencloth1"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/menCloth1"
+        app:layout_constraintEnd_toStartOf="@+id/mencloth2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menID"
+        app:srcCompat="@drawable/man1" />
+
+    <ImageView
+        android:id="@id/mencloth2"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="61dp"
+        android:contentDescription="@string/menCloth2"
+        app:layout_constraintEnd_toStartOf="@+id/mencloth3"
+        app:layout_constraintStart_toEndOf="@+id/mencloth1"
+        app:layout_constraintTop_toBottomOf="@+id/womencloth2"
+        app:srcCompat="@drawable/man2" />
+
+    <ImageView
+        android:id="@id/mencloth3"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="62dp"
+        android:contentDescription="@string/menCloth3"
+        app:layout_constraintEnd_toStartOf="@+id/mencloth4"
+        app:layout_constraintStart_toEndOf="@+id/mencloth2"
+        app:layout_constraintTop_toBottomOf="@+id/womencloth3"
+        app:srcCompat="@drawable/men3" />
+
+    <ImageView
+        android:id="@id/mencloth4"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/menCloth4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mencloth3"
+        app:layout_constraintTop_toBottomOf="@+id/womencloth4"
+        app:srcCompat="@drawable/men4" />
+
+    <Button
+        android:id="@+id/add1"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="11dp"
+        android:background="#293B9F"
+        android:text="@string/add1"
+        android:textColor="#F8F5F5"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/womencloth1" />
+
+    <Button
+        android:id="@+id/add5"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="7dp"
+        android:background="#293B9F"
+        android:text="@string/add5"
+        android:textColor="#F8F5F5"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mencloth1" />
+
+    <Button
+        android:id="@+id/addWCloth1"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="7dp"
+        android:background="#293B9F"
+        android:text="@string/add6"
+        android:textColor="#F8F5F5"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/add5"
+        app:layout_constraintTop_toBottomOf="@+id/mencloth2" />
+
+    <Button
+        android:id="@+id/add7"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="7dp"
+        android:background="#293B9F"
+        android:text="@string/add7"
+        android:textColor="#F8F5F5"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/addWCloth1"
+        app:layout_constraintTop_toBottomOf="@+id/mencloth3" />
+
+    <Button
+        android:id="@+id/add8"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="7dp"
+        android:background="#293B9F"
+        android:text="@string/add8"
+        android:textColor="#F8F5F5"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/add7"
+        app:layout_constraintTop_toBottomOf="@+id/mencloth4" />
+
+    <Button
+        android:id="@+id/add2"
+        android:layout_width="59dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="11dp"
+        android:background="#293B9F"
+        android:text="@string/add2"
+        android:textColor="#F8F5F5"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/add1"
+        app:layout_constraintTop_toBottomOf="@+id/womencloth2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

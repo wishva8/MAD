@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:background="#FFFBEA"
+    android:contentDescription="@string/main"
+    android:visibility="visible"
+    tools:context=".SignUp"
+    tools:visibility="visible">
+
+    <TableRow
+        android:id="@+id/MenuBar"
+        android:layout_width="411dp"
+        android:layout_height="61dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/MenuList"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/menuList"
+            app:srcCompat="@drawable/menu_icon"
+            app:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/shopLogo"
+            android:layout_width="304dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/logiIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/shoppingCrt"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:contentDescription="@string/ShoppingCart"
+            android:focusable="true"
+            app:srcCompat="@drawable/shopping_cart"
+            app:tint="@android:color/white">
+        </ImageView>
+
+
+    </TableRow>
+
+
+    <TextView
+        android:id="@+id/app_slogan"
+        android:layout_width="269dp"
+        android:layout_height="89dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="cursive"
+        android:text="@string/LIVE_WITH_A_GRATEFUL_Heart"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/main_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="#ED4CDD"
+        android:padding="20dp"
+        android:text="@string/already_have_an_account_login"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/main_join_now_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_login_btn"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ED4CDD"
+        android:padding="20dp"
+        android:text="@string/join_now"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

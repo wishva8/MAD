@@ -63,9 +63,25 @@
 
     <TextView
         android:id="@+id/txtview"
-        android:layout_width="352dp"
-        android:layout_height="463dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="227dp"
+        android:layout_height="382dp"
+        android:layout_marginTop="72dp"
+        android:scrollbars="vertical"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="11dp"
+        android:text="Rider Details"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
