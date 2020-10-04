@@ -142,10 +142,7 @@ public class Login extends AppCompatActivity {
                     public void onCancelled(@NonNull DatabaseError error) {
                         Toast.makeText(Login.this, "Login Unsuccessful", Toast.LENGTH_SHORT).show();
                     }
-                });
-
-
-            }
+                });  }
         }catch (Exception e){
             e.getMessage();
         }
