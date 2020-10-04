@@ -39,7 +39,7 @@ public class stef_MainActivity extends AppCompatActivity {
         butpost=findViewById(R.id.post);
         butsave=findViewById(R.id.save);
 
-        prd = new com.example.mad.Product();
+        prd = new Product();
 
         butpost.setOnClickListener(new View.OnClickListener() {
             @Override

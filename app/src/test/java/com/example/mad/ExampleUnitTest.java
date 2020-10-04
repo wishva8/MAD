@@ -1,5 +1,7 @@
 package com.example.mad;
 
+import android.app.Instrumentation;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -13,6 +15,7 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     private Login login=null;
     private MainActivity mainActivity=null;
+//    Instrumentation.ActivityMonitor monitor=getInstrumenttation().addMonitor(mainActivity.class.getName(),nu)
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
