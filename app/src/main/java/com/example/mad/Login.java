@@ -21,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 public class Login extends AppCompatActivity {
 
     EditText username,password;
-    Button loginBtn;
+
     DatabaseReference dbrefCus;
 
     @Override
@@ -133,9 +133,6 @@ public class Login extends AppCompatActivity {
                                 password.setText("");
                                 username.setText("");
                                 startActivity(intent);
-                            }else {
-                                Toast.makeText(Login.this, "Login Unsuccessful", Toast.LENGTH_SHORT).show();
-
                             }
                         }
 
@@ -143,7 +140,7 @@ public class Login extends AppCompatActivity {
 
                     @Override
                     public void onCancelled(@NonNull DatabaseError error) {
-
+                        Toast.makeText(Login.this, "Login Unsuccessful", Toast.LENGTH_SHORT).show();
                     }
                 });
 

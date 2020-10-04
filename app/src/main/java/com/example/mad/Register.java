@@ -36,7 +36,7 @@ public class Register extends AppCompatActivity {
         CreateAccountButton = (Button)findViewById(R.id.register_btn);
         InputName = (EditText)findViewById(R.id.register_userName_input);
         InputPhoneNumber = (EditText)findViewById(R.id.register_phone_number_input);
-        InputPassword = (EditText)findViewById(R.id.register_phone_number_input);
+        InputPassword = (EditText)findViewById(R.id.register_password_input);
         loadingBar = new ProgressDialog(this);
 
         CreateAccountButton.setOnClickListener(new View.OnClickListener(){

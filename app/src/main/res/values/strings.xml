@@ -119,50 +119,47 @@
     <string name="img1">img</string>
 
 
+    <string name="menuList" />
 
+    <string name="logiIcon" />
 
+    <string name="searchIcon" />
 
-    <string name="menuList"/>
-
-    <string name="logiIcon"/>
-
-    <string name="searchIcon"/>
-
-    <string name="coverImage"/>
+    <string name="coverImage" />
 
     <string name="newArrivals">NEW ARRIVALS</string>
 
-    <string name="clothsCategory"/>
+    <string name="clothsCategory" />
 
     <string name="womenCloths">Women</string>
 
-    <string name="womenCloth1"/>
+    <string name="womenCloth1" />
 
-    <string name="womenCloth2"/>
+    <string name="womenCloth2" />
 
-    <string name="womencloth3"/>
+    <string name="womencloth3" />
 
-    <string name="womenCloth4"/>
+    <string name="womenCloth4" />
 
     <string name="menCloths">Men</string>
 
-    <string name="Mencloth1"/>
+    <string name="Mencloth1" />
 
-    <string name="menCloth1"/>
+    <string name="menCloth1" />
 
-    <string name="menCloth2"/>
+    <string name="menCloth2" />
 
-    <string name="menCloth3"/>
+    <string name="menCloth3" />
 
-    <string name="menCloth4"/>
+    <string name="menCloth4" />
 
     <string name="NumOfItems">Bag(3Items)</string>
 
-    <string name="bagItems"/>
+    <string name="bagItems" />
 
-    <string name="ShoppingCart"/>
+    <string name="ShoppingCart" />
 
-    <string name="bagItemOne"/>
+    <string name="bagItemOne" />
 
     <string name="updateBtn">UPDATE</string>
 
@@ -175,21 +172,19 @@
     <string name="price2">"Price : "</string>
 
 
-
     <string name="totalItems">Bag(1Item)</string>
 
-    <string name="editimg"/>
+    <string name="editimg" />
 
-    <string name="delteImg"/>
+    <string name="delteImg" />
 
     <string name="blousName">Sleevless Top</string>
 
-    <string name="blouseName"/>
+    <string name="blouseName" />
 
     <string name="price1">Price</string>
 
     <string name="rs">Rs.1750.00</string>
-
 
 
     <string name="clr">Color</string>
@@ -220,17 +215,17 @@
 
     <string name="visaMaster">Pay with Visa/Master</string>
 
-    <string name="btngroup"/>
+    <string name="btngroup" />
 
     <string name="amex">American Express</string>
 
-    <string name="visaMastCard"/>
+    <string name="visaMastCard" />
 
-    <string name="amexCard"/>
+    <string name="amexCard" />
 
     <string name="pay">Pay Now</string>
 
-    <string name="payNow"/>
+    <string name="payNow" />
 
     <string name="btnsave">SAVE</string>
 
@@ -250,29 +245,29 @@
 
     <string name="add8">ADD</string>
 
-    <string name="newWomenCloth1"/>
+    <string name="newWomenCloth1" />
 
     <string name="newArrivalWomen">Women</string>
 
-    <string name="newWCloth1"/>
+    <string name="newWCloth1" />
 
-    <string name="newWCloth2"/>
+    <string name="newWCloth2" />
 
-    <string name="newWCloth3"/>
+    <string name="newWCloth3" />
 
-    <string name="newWCloth5"/>
+    <string name="newWCloth5" />
 
     <string name="newWCloth4">newWCloth4</string>
 
     <string name="newArrivalMen">Men</string>
 
-    <string name="newMCloth1"/>
+    <string name="newMCloth1" />
 
-    <string name="newMCloth2"/>
+    <string name="newMCloth2" />
 
-    <string name="newMCloth3"/>
+    <string name="newMCloth3" />
 
-    <string name="newMCloth4"/>
+    <string name="newMCloth4" />
 
     <string name="newMclothPrice1">"Price : "</string>
 
@@ -288,11 +283,11 @@
 
     <string name="addWCloth4">ADD</string>
 
-    <string name="WClothLKR2"/>
+    <string name="WClothLKR2" />
 
-    <string name="newMClothPrice3"/>
+    <string name="newMClothPrice3" />
 
-    <string name="newMClothPrice4"/>
+    <string name="newMClothPrice4" />
 
     <string name="newMclothPrice2">"Price : "</string>
 
@@ -317,7 +312,6 @@
     <string name="CodeNum">A001</string>
 
 
-
     <string name="ShopName">Smart Fashion</string>
 
     <string name="shopName">Smart Fashion</string>
@@ -330,9 +324,11 @@
 
     <string name="phone_number">Phone Number</string>
 
-    <string name="BgImage"/>
+    <string name="BgImage" />
 
-    <string name="signOutButton"/>
+    <string name="signOutButton" />
     <string name="deleteAll">delete all</string>
+    <string name="CusDetails">Customer Details</string>
+    <string name="deleteDetails">Delete</string>
 
 </resources>

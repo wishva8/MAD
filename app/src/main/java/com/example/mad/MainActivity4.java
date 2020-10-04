@@ -32,13 +32,12 @@ public class MainActivity4 extends AppCompatActivity {
 
 
         details.setMovementMethod(new ScrollingMovementMethod());
-//        RView=findViewById(R.id.details);
         dbRef= FirebaseDatabase.getInstance().getReference().child("rider");
         dbRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (snapshot.hasChildren()){
-//                   Rider rider =snapshot.getValue();
+
                     details.setText(snapshot.getValue().toString());
                 }
             }

@@ -37,6 +37,9 @@ public class customerHome extends AppCompatActivity{
         Intent intent2= new Intent(this, NewArrivals.class);
         startActivity(intent2);
     }
-
+    public void userProfile(View view){
+        Intent intent3= new Intent(this, CustomerDetails.class);
+        startActivity(intent3);
+    }
 
 }

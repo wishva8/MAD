@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFBEA"
+    tools:context=".CustomerDetails">
+
+    <TableRow
+        android:id="@+id/MenuBar"
+        android:layout_width="411dp"
+        android:layout_height="61dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/MenuList"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/menuList"
+            app:srcCompat="@drawable/menu_icon"
+            app:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/shopLogo"
+            android:layout_width="268dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/logiIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/shoppingCrt"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:contentDescription="@string/ShoppingCart"
+            android:focusable="true"
+            android:onClick="shoppingCart"
+            app:srcCompat="@drawable/shopping_cart"
+            app:tint="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/signOut"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/signOutButton"
+            app:srcCompat="@drawable/sign_out"
+            app:tint="@android:color/white" />
+
+    </TableRow>
+
+    <TextView
+        android:id="@+id/cusdetailsTopic"
+        android:layout_width="190dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="148dp"
+        android:fontFamily="sans-serif"
+        android:shadowColor="#302D2D"
+        android:text="@string/CusDetails"
+        android:textColor="#1B2D93"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MenuBar" />
+
+    <TextView
+        android:id="@+id/cusDetailsTextView"
+        android:layout_width="377dp"
+        android:layout_height="339dp"
+        android:layout_marginTop="40dp"
+        android:background="#3103A9F4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cusdetailsTopic" />
+
+    <Button
+        android:id="@+id/DeleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="16dp"
+        android:background="#142688"
+        android:clickable="true"
+        android:onClick="DeleteAll"
+        android:text="@string/deleteDetails"
+        android:textColor="#F8F5F5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cusDetailsTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

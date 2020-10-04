@@ -9,55 +9,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".testShow"></activity>
+        <activity android:name=".CustomerDetails"></activity>
+        <activity android:name=".testShow" />
         <activity android:name=".MainActivity5" />
-        <activity android:name=".MainActivity4" > </activity>
-        <activity android:name=".MainActivity3"></activity>
+        <activity android:name=".MainActivity4"></activity>
+        <activity android:name=".MainActivity3" />
         <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".Login">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-        <activity android:name=".osh_Updatepart1"/>
-
-        <activity android:name=".osh_delete"/>
-
-        <activity android:name=".osh_display"/>
-
-
-        <activity android:name=".osh_MainActivity"/>
-
-
-        <activity android:name=".stef_ProductMain"/>
-
-        <activity android:name=".stef_UpdateProduct"/>
-
-
-        <activity android:name=".stef_MainActivity"/>
-
-
-        <activity android:name=".Register"/>
-
-
-
-        <activity android:name=".ShoppingCart"/>
-
-        <activity android:name=".UpdateShoppingCart"/>
-
-        <activity android:name=".NewArrivals"/>
-
-        <activity android:name=".SignUp"/>
-
-
-        <activity android:name=".customerHome">
-            </activity>
+        <activity android:name=".osh_Updatepart1" />
+        <activity android:name=".osh_delete" />
+        <activity android:name=".osh_display" />
+        <activity android:name=".osh_MainActivity" />
+        <activity android:name=".stef_ProductMain" />
+        <activity android:name=".stef_UpdateProduct" />
+        <activity android:name=".stef_MainActivity" />
+        <activity android:name=".Register" />
+        <activity android:name=".ShoppingCart" />
+        <activity android:name=".UpdateShoppingCart" />
+        <activity android:name=".NewArrivals" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".customerHome"></activity>
     </application>
 
 </manifest>
