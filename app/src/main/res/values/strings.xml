@@ -330,5 +330,16 @@
     <string name="deleteAll">delete all</string>
     <string name="CusDetails">Customer Details</string>
     <string name="deleteDetails">Delete</string>
+    <string name="priceTg1">Rs.1250.00</string>
+    <string name="priceTg2">Rs.1500.00</string>
+    <string name="priceTg">Rs.1650.00</string>
+    <string name="pricetg">Rs.1250.00</string>
+    <string name="priceTg5">Rs.2700.00</string>
+    <string name="pricetg6">Rs.1890.00</string>
+    <string name="pricetg7">Rs.1450.00</string>
+    <string name="pricetg8">Rs.1050.00</string>
+    <string name="pricetg3">rs.1850.00</string>
+    <string name="pricetg4">Rs.1450.00</string>
+    <string name="user_profile">User Profile</string>
 
 </resources>

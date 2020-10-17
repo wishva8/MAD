@@ -10,6 +10,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -21,6 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 public class Login extends AppCompatActivity {
 
     EditText username,password;
+    ProgressBar pbar;
 
     DatabaseReference dbrefCus;
 
@@ -32,8 +34,13 @@ public class Login extends AppCompatActivity {
 
     public void CheckLogin(View view){
 
+        pbar=findViewById(R.id.progressBar);
+        pbar.setVisibility(View.VISIBLE);
+
         username= findViewById(R.id.etUserName);
         password=findViewById(R.id.etPassword);
+
+
         try{
             if(TextUtils.isEmpty(username.getText().toString()))
                 Toast.makeText(this, "Please enter the Username", Toast.LENGTH_SHORT).show();
@@ -59,6 +66,7 @@ public class Login extends AppCompatActivity {
                                 password.setText("");
                                 username.setText("");
                                 startActivity(intent);
+                                pbar.setVisibility(View.INVISIBLE);
                             }
                         }
 
@@ -84,6 +92,7 @@ public class Login extends AppCompatActivity {
                                password.setText("");
                                username.setText("");
                                startActivity(intent);
+                               pbar.setVisibility(View.INVISIBLE);
                            }
                        }
 
@@ -108,6 +117,7 @@ public class Login extends AppCompatActivity {
                                 password.setText("");
                                 username.setText("");
                                 startActivity(intent);
+                                pbar.setVisibility(View.INVISIBLE);
                             }
                         }
 
@@ -133,6 +143,7 @@ public class Login extends AppCompatActivity {
                                 password.setText("");
                                 username.setText("");
                                 startActivity(intent);
+                                pbar.setVisibility(View.INVISIBLE);
                             }
                         }
 
